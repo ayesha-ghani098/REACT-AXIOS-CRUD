@@ -1,0 +1,70 @@
+/* ------Contact Card------- */
+
+.card {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.subcard {
+    display: flex;
+}
+
+.content {
+    padding-left: 10px;
+}
+
+.card img {
+    display: inline-block;
+    width: 85px;
+    height: 75px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.text {
+    display: flex;
+    font-size: 30px;
+    color: black;
+}
+
+.subtext {
+    display: flex;
+    font-size: 20px;
+    color: black;
+}
+
+#icon {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* -----Contact List------ */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h2 {
+    padding: 20px;
+    font-weight: bold;
+    color: #b51ab0;
+}
+
+.header button {
+    background-color: #d8146f;
+    color: #fff;
+    padding: 6px 10px;
+    border: none;
+}
+
+.header button:hover {
+    outline: none;
+    background-color: #b51ab0;
+    color: #fff;
+}
