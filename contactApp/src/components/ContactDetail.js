@@ -12,22 +12,24 @@ import user from '../assets/avatar.PNG';
 const ContactDetail = (props) => {
   const { name, email } = props.location.state.contact;
   return (
-    <div className='main'>
-      <div className='ui card centered'>
+    <div className='card-detail'>
+      <div className=''>
         <div className='image'>
-          <img src={user} alt='user' />
+          <img src={user} className='img-fluid' alt='user' />
         </div>
-        <div className='content'>
-          <div className='header'>{name}</div>
-          <div className='description'>{email}</div>
+        <div style={{ margin: '20px 0' }}>
+          <h1 className='textpart'>{name}</h1>
+          <h5 className='textpart'>{email}</h5>
         </div>
-      </div>
-      <div className='center-div'>
-        <Link to='/'>
-          <button className='ui button blue center'>
-            Back to Contact List
-          </button>
-        </Link>
+
+        <div
+          className='detail'
+          style={{ display: 'flex', justifyContent: 'center' }}
+        >
+          <Link to='/'>
+            <button>Back to Contact List</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -1,69 +1,153 @@
-/* ------Contact Card------- */
+/* -----Contact List------ */
 
-.card {
-    padding: 15px;
+.container {
+    margin-top: 30px;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0;
+    padding: 0 5px;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.subcard {
-    display: flex;
+.header h1 {
+    font-weight: 400px;
+    color: #d8146f;
 }
 
-.content {
-    padding-left: 10px;
+.header button {
+    background-color: #d8146f;
+    color: #fff;
+    padding: 4px 10px;
+    border: none;
 }
 
-.card img {
-    display: inline-block;
-    width: 85px;
-    height: 75px;
+.header button:hover {
+    outline: none;
+    background-color: #b51ab0;
+    color: #fff;
+}
+
+
+/* ------Contact Card------- */
+
+.row {
+    margin: 10px 10px;
+    border-bottom: 1px solid #d859d4;
+    padding: 10px 0;
 }
 
 .link {
     text-decoration: none;
 }
 
-.text {
+#subcard {
     display: flex;
-    font-size: 30px;
-    color: black;
+}
+
+#subcard img {
+    width: 65px;
+    height: 60px;
+}
+
+.content {
+    padding-left: 10px;
+    align-items: center;
+}
+
+.text {
+    padding-top: 5px;
+    display: flex;
+    font-size: 20px;
+    color: #b51ab0;
 }
 
 .subtext {
     display: flex;
-    font-size: 20px;
-    color: black;
+    font-size: 15px;
+    color: #b12fac;
+}
+
+#subcard2 {
+    margin-top: -48px;
 }
 
 #icon {
-    width: 40px;
-    height: 40px;
-}
-
-
-/* -----Contact List------ */
-
-.header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header h2 {
-    padding: 20px;
-    font-weight: bold;
+    float: right;
+    padding: 10px;
     color: #b51ab0;
 }
 
-.header button {
+
+/* ---Add Contact----- */
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.main h2 {
+    font-weight: 400px;
+    color: #d8146f;
+    margin-bottom: 30px;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+}
+
+.field label {
+    margin-right: 10px;
+    display: flex;
+    font-size: 15px;
+    color: #4e124c;
+}
+
+.field input {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+.main button {
     background-color: #d8146f;
     color: #fff;
-    padding: 6px 10px;
+    padding: 4px 20px;
     border: none;
 }
 
-.header button:hover {
+.main button:hover {
+    outline: none;
+    background-color: #b51ab0;
+    color: #fff;
+}
+
+
+/* ------Card Details---- */
+
+.card-detail {
+    display: flex;
+    justify-content: center;
+}
+
+.textpart {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.detail button {
+    background-color: #d8146f;
+    color: #fff;
+    padding: 4px 20px;
+    border: none;
+}
+
+.detail button:hover {
     outline: none;
     background-color: #b51ab0;
     color: #fff;

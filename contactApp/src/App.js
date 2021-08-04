@@ -17,7 +17,6 @@ import AddContact from '../src/components/AddContact';
 import ContactList from '../src/components/ContactList';
 import ContactDetail from '../src/components/ContactDetail';
 import UpdateContact from '../src/components/UpdateContact';
-import Header from '../src/components/Header';
 
 const App = () => {
   const [contacts, setContacts] = useState([]);
@@ -72,9 +71,8 @@ const App = () => {
   };
 
   return (
-    <div className='container'>
+    <div>
       <Router>
-        <Header />
         <Switch>
           <Route
             path='/'

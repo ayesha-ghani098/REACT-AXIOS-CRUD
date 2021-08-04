@@ -12,8 +12,8 @@ import user from '../assets/avatar.PNG';
 const ContactCard = (props) => {
   const { id, name, email } = props.contact;
   return (
-    <div className='card'>
-      <div className='subcard'>
+    <div className='row'>
+      <div id='subcard' className='col-sm-12 col-md-12 col-lg-12'>
         <img className='img-fluid' src={user} alt='user' />
         <div className='content'>
           <Link
@@ -24,11 +24,11 @@ const ContactCard = (props) => {
             }}
           >
             <h3 className='text'>{name}</h3>
-            <h4 className='subtext'>{email}</h4>
+            <p className='subtext'>{email}</p>
           </Link>
         </div>
       </div>
-      <div className='subcard2'>
+      <div id='subcard2'>
         <i
           id='icon'
           className='far fa-trash-alt'

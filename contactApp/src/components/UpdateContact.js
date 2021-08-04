@@ -27,31 +27,49 @@ const UpdateContact = (props) => {
   };
 
   return (
-    <div>
-      <h2>Edit Contact</h2>
-      <form className='ui form' onSubmit={update}>
-        <div className='field'>
-          <label>Name</label>
-          <input
-            type='text'
-            name='name'
-            placeholder='Name'
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
+    <div className='main'>
+      <div>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <h2>Update Contact</h2>
         </div>
-        <div className='field'>
-          <label>Email</label>
-          <input
-            type='text'
-            name='email'
-            placeholder='Email'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <button className='ui button blue'>Update</button>
-      </form>
+
+        <form className='form' onSubmit={update}>
+          <div className='field'>
+            <label>Name</label>
+            <input
+              type='text'
+              name='name'
+              placeholder='Name'
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+          <div className='field'>
+            <label>Email</label>
+            <input
+              type='text'
+              name='email'
+              placeholder='Email'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div
+            style={{
+              marginTop: '20px',
+              display: 'flex',
+              justifyContent: 'center',
+            }}
+          >
+            <button>Update</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
